@@ -4,9 +4,13 @@ from __future__ import annotations
 
 import argparse
 import logging
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+# Add parent directory to path so we can import src
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.cleaning import clean_transactions
 from src.features import build_customer_features, add_purchase_span_months
@@ -32,7 +36,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Customer retention pipeline")
     parser.add_argument(
         "--input",
-        required=True,
+        default="data/raw/online_retail_II.xlsx",
         help="Path to Online Retail II Excel file",
     )
     parser.add_argument(
