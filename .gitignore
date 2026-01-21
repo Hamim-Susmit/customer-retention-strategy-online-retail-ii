@@ -1,0 +1,22 @@
+# Data
+/data/raw/
+/data/processed/
+
+# Reports figures and outputs
+/reports/figures/
+/reports/customer_action_list.csv
+/reports/simulation_summary.csv
+
+# Notebooks
+**/.ipynb_checkpoints/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+
+# OS
+.DS_Store
