@@ -1,4 +1,4 @@
-Customer Retention & Intervention Strategy (Data → Decisions)
+## Customer Retention & Intervention Strategy (Data → Decisions)
 
 Turn customer analytics into an actionable retention plan. This project builds a complete, reproducible pipeline to segment customers by churn risk and value, recommend interventions, simulate ROI under budget constraints, and export an action list for business teams.
 
